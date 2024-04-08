@@ -1,0 +1,10 @@
+<div>
+  <h1 class="font-bold text-4xl">Articles</h1>
+  <ul class="list-decimal">
+    <% @articles.each do |article| %>
+      <li class="hover:underline">
+        <%= link_to article.title, article %>
+      </li>
+    <% end %>
+  </ul>
+</div>
